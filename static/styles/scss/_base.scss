@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+/* Contains all the resets, variables, mixins, and utility classes */
+
+$background-color-light: #292c2e;
+$background-color-dark: #242729;
+$text-color-light: #e7e5e5;
+$text-color-normal: #cfcfcf;
+$text-color-dark: #bebebe;
+$red-lighter: #d13636;
+$red-light: #be2f2f;
+$red-normal: #992424;
+$red-dark: #831f1f;
+$red-darker: #701a1a;
+$grey-lightest: #a0a0a0;
+$grey-lighter: #757575;
+$grey-light: #5d5d5d;
+$grey-normal: #555555;
+$grey-dark: #3b3b3b;
+$grey-darker: #2f2f2f;
+$grey-darkest: #242424;
+$black: #000000;
+$white: #ffffff;
+
+$project-images: (
+    1: "../images/image1.png",
+    2: "../images/image2.png",
+    3: "../images/image3.png"
+);
+
+@mixin project_image($background-image) {
+	grid-area: image;
+	background: url($background-image);
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background-size: cover;
+}

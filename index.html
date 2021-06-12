@@ -1,1 +1,193 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jakub Westa">
+    <meta name="keywords" content="Jakub, Westa, Jakub Westa, Rumia, Trójmiasto, Programista, Portfloio">
+    <meta name="description" content="Jakub Westa's website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Jakub Westa</title>
+    <link rel="stylesheet" type= "text/css" href="static/styles/main.css">
+    <script src="https://kit.fontawesome.com/15248b74ac.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div>
+      <ul class="menu">
+        <li class="nav-li li-aboutme"><a href="#aboutme_section_id">About me</a></li>
+        <li class="nav-li li-skills"><a href="#skills_section_id">Skills</a></li>
+        <li class="nav-li li-projects"><a href="#projects_section_id">Projects</a></li>
+        <li class="nav-li li-contact"><a href="#contact_section_id">Contact</a></li>
+      </ul>
+    </div>
+    <section id="aboutme_section_id">
+      <div class="aboutme_section">
+        <div class="title">
+          Hey, my name is <span class="highlight">Jakub Westa</span>.
+          <br>
+          I am junior Back-end developer.
+        </div>
+        <div class="text">
+          Hi, I'm from Rumia, Poland. I am passionate in new technologies, games and learning new things. 
+          I am currently looking for a job as a begginer / junior Back-end developer. 
+          I'd also be very happy to work with someone on a cool project.
+        </div>
+    </section>
+    <section id="skills_section_id">
+      <div class="skills_section">
+        <div class="main">
+          <div class="title">My Skills</div>
+          <div class="column">
+            <h1>Programming</h1>
+            <div class="type">
+              <div class="name">Python</div>
+              <div class="bg_bar">
+                <div class="color_bar" style="--skill-level: 85%"></div>
+              </div>
+            </div>
+            <div class="type">
+              <div class="name">HTML & CSS</div>
+              <div class="bg_bar">
+                <div class="color_bar" style="--skill-level: 70%"></div>
+              </div>
+            </div>
+            <div class="type">
+              <div class="name">JavaScript</div>
+              <div class="bg_bar">
+                <div class="color_bar" style="--skill-level: 35%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <h1>Frameworks & Databases</h1>
+            <div class="type">
+              <div class="name">Flask</div>
+              <div class="bg_bar">
+                <div class="color_bar" style="--skill-level: 80%"></div>
+              </div>
+            </div>
+            <div class="type">
+              <div class="name">Django</div>
+              <div class="bg_bar">
+                <div class="color_bar" style="--skill-level: 75%"></div>
+              </div>
+            </div>
+            <div class="type">
+              <div class="name">MySQL</div>
+              <div class="bg_bar">
+                <div class="color_bar" style="--skill-level: 60%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <h1>General</h1>
+            <div class="type">
+              <div class="name">English</div>
+              <div class="bg_bar">
+                <div class="color_bar" style="--skill-level: 90%"></div>
+              </div>
+            </div>
+            <div class="type">
+              <div class="name">Git</div>
+              <div class="bg_bar">
+                <div class="color_bar" style="--skill-level: 70%"></div>
+              </div>
+            </div>
+            <div class="type">
+              <div class="name">Testing</div>
+              <div class="bg_bar">
+                <div class="color_bar" style="--skill-level: 30%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="other">
+          <div class="title">Other things that I know ...</div>
+          <div class="text">
+            I have some experience with deploying websites on 
+            <span class="highlight">AWS</span>.
+            I also know some solid basics of programming in 
+            <span class="highlight">C++</span>, 
+            <span class="highlight">Java</span> and 
+            <span class="highlight">Ruby</span>.
+            I understand internet websites concepts like DNS, HTTP, proxy, 
+            <span class="highlight">sockets</span> etc.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects_section_id">
+      <div class="projects_section">
+        <div class="title">
+          My projects
+        </div>
+        <div class="row">
+          <div class="ellement">
+            <div class="card">
+              <div class="image-1"></div>
+              <div class="text">
+                <span class="tech">Python & Tkinter</span>
+                <h2>LAN Chat App</h2>
+                <p>Python tkinter app which allows you to chat with others in your LAN network. It works by using sockets and sending packages thorugh server and clients.</p>
+              </div>
+            </div>
+          </div>
+          <div class="ellement">
+            <div class="card">
+              <div class="image-2"></div>
+              <div class="text">
+                <span class="tech">Django</span>
+                <h2>Webshop</h2>
+                <p>Django webshop which allows user to create, buy and sell products. My biggest project currently. To see full description visit its github page!</p>
+              </div>
+            </div>
+          </div>
+          <div class="ellement">
+            <div class="card">
+              <div class="image-3"></div>
+              <div class="text">
+                <span class="tech">Java</span>
+                <h2>Minecraft Mods</h2>
+                <p>Multiple minecraft modifications adding new features to the game. Such as new ores, tools, transport mechanics and many others.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact_section_id">
+      <div class="contact_section">
+        <div class="title">
+          Contact me
+          <p>Have a question or want to work together?</p>
+        </div>
+        <form action="/action_page.php">
+          <div id="left">
+            <input type="text" id="name" name="name" placeholder="Name" autocomplete="off">
+          </div>
+          <div id="right">
+            <input type="text" id="email" name="email" placeholder="Email" autocomplete="off">
+          </div>
+          <div id="bottom">
+            <textarea id="subject" name="subject" placeholder="Subject"></textarea>
+            <textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
+            <input type="submit" value="Send">
+          </div>
+        </form>
+        <div class="icons">
+          <ul>
+            <a href="https://mailto:jakub.westa@gmail.com"><li><i class="far fa-envelope fa-3x"></i></li></a>
+            <a href="https://github.com/makubas"><li><i class="fab fa-github fa-3x"></i></li></a>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <footer>
+        <div style="text-align: right;">
+          &copy; Copyright 2021, Jakub Westa
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>

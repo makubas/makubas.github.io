@@ -1,0 +1,61 @@
+@import '_base';
+
+/* Everything that is reusable – buttons, navbars, cards, and so on */
+
+.menu {
+	background-color: $grey-darkest;
+	list-style: none;
+	position: fixed;
+	text-shadow: 1px 1px 1px $grey-lightest;
+	font-size: 20px;
+	margin: 0 auto;
+	padding: 0;
+	top: 0.5em;
+	border-radius: 4px;
+	width: 50%;
+	height: 60px;
+	left: 25%;
+	z-index: 7;
+	li {
+		float: left;
+		width: 25%;
+		height: 100%;
+		margin: 0 auto;
+		position: relative;
+		padding: 0;
+		&::before {
+			content: '';
+			position: absolute;
+			height: 4px;
+			width: 0px;
+			left: 10%;
+			bottom: 10px;
+			background: $red-normal; 
+			transition: all .5s ease;
+			border-radius: 4px;
+		}
+		&:hover::before {
+			width: 80%;
+		}
+	}
+	a {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+		color: $white;
+		text-decoration: none;
+		position: relative;
+		font-size: 22px;
+		z-index: 17;
+	}
+}
+
+.highlight {
+	color: $red-light;
+	overflow: hidden;
+    white-space: nowrap;
+	display: block;
+	display: inline;
+}
